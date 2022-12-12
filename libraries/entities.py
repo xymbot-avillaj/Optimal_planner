@@ -26,6 +26,10 @@ class TextAttr(Attr):
     type = 'Text'
     value: str
 
+class BooleantAttr(Attr):
+    type = 'Text'
+    value: bool
+
 class Structured(Attr):
     type = 'StructuredValue' #StructuredValue
     value: dict
@@ -66,6 +70,8 @@ class OPEEntity (BaseEntity):
     type = 'Optimal_Planer_Parameters'
     Operators : Optional[Arrayed]
     Orders : Optional[Arrayed]
+    Production: Optional [Arrayed]
+    Priority: Optional [BooleantAttr]
 
 
 
